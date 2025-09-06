@@ -574,7 +574,7 @@
                 </div>
 
                 <button class="btn btn-secondary" id="sendEmailBtn">
-                    <span id="emailButtonText">📧 שלח דוח מייל אוטומטי</span>
+                    <span id="emailButtonText">📧 שלח דוח מייל </span>
                 </button>
 
                 <button class="btn" id="previewEmailBtn">
@@ -1109,7 +1109,7 @@
                     showNotification('הדוח נשלח בהצלחה למנהל יחיאל! 📧');
                     emailButton.innerHTML = '✅ נשלח בהצלחה';
                     setTimeout(() => {
-                        emailButton.textContent = '📧 שלח דוח מייל אוטומטי';
+                        emailButton.textContent = '📧 שלח דוח מייל ';
                         emailBtn.disabled = false;
                     }, 3000);
                     
@@ -1122,7 +1122,7 @@
             } catch (error) {
                 console.error('Form submission error:', error);
                 showNotification('שגיאה בשליחת הדוח. נסה שוב.', 'error');
-                emailButton.textContent = '📧 שלח דוח מייל אוטומטי';
+                emailButton.textContent = '📧 שלח דוח מייל ';
                 emailBtn.disabled = false;
                 if (document.body.contains(form)) {
                     document.body.removeChild(form);
